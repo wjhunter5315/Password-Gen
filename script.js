@@ -1,49 +1,46 @@
 console.log(window);
+var passwordEl = document.querySelector("#password");
+var generateEl = document.querySelector("#generate");
+var copyEl = document.querySelector("#copy");
 
-var password = {
-    passLength: 8,
-    passSpec: [],
-    passUcase: [],
-    passLcase: [],
+
+function getPassword() {
+    
 }
 
-var passLength = prompt("Between 8 - 128, how long would you like your password to be?");
+function getLength() {
+    event.preventDefault();
+    var passLength = prompt("Between 8 - 128, how long would you like your password to be?");
+    for (var pLength = passLength.querySelector);
 
-var passSpec = confrim("Would you like your password to include special characters (&%!#^) ?");
+}
 
-var passUcase = confrim("Would you like your password to have upper-case letters?");
+function getSpec() {
+    event.preventDefault();
+    var passSpec = confrim("Would you like your password to include special characters (&%!#^) ?");
+    if {
+        //[!@#$%^&*()_+-=,./;'[]\<>?:"{}|]
+    }
+}
 
-var passLcase = confirm("Would you like your password to have lower-case letters?");
+function getUcase() {
+    event.preventDefault();
+    var passUcase = confrim("Would you like your password to have upper-case letters?");
+    if {
+        //[ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+    }
+}
 
+function getLcase() {
+    event.preventDefault();
+    var passLcase = confirm("Would you like your password to have lower-case letters?");
+    var lCase = []
+    if {
+        //[abcdefghijklmnopqrstuvwxyz]
+    }
+}
 
-function currentPass() {
-    console.log("Length: " + password.passLength);
-    console.log("Special Characters: " + password.passSpec);
-    console.log("Upper Case: " + password.passUcase);
-    console.log("Lower Case: " + password.passLcase);
-    console.log("------------------------------");
-  }
-
-  if passSpec {
-      //enable special characters
-  }
-
-  else {
-      //dont use special characters
-  }
-
-  if passUcase {
-      //allow random upper-case letters
-  }
-
-  else {
-      //do not allow random upper-case letters
-  }
-
-  if passLcase {
-      //allow lower-case letters
-  }
-
-  else {
-      //do not allow lower-case letters
-  }
+password.getLength();
+password.getSpec();
+password.getUcase();
+password.getLcase();
