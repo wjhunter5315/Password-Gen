@@ -1,5 +1,6 @@
 console.log(window);
 var password = "";
+var passEl = [];
 var charOptions = [
     ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
     ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "-", "=", ",", ".", "/", ";", "'", "[", "]", "<", ">", "?", ":", "{", "}"],
@@ -29,6 +30,10 @@ function makePass(password) {
             console.log(randomNumber1);
             console.log(randomNumber2);
             console.log(randomEl);
+            
+            passEl.push(randomEl);
+            console.log(passEl);
+            
         }
        
         else if (specChar === false && caseUpper === true && caseLower === true) {
@@ -76,7 +81,12 @@ function makePass(password) {
             console.log(randomEl);
         }
     }
+    var myJSON = JSON.stringify(passEl);
+    console.log(myJSON);
 }
+document.getElementById("generate").addEventListener("click", function(){
+    passEl.push(textarea);
+})
 console.log(password);
 
 
