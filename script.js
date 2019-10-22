@@ -119,7 +119,13 @@ document.getElementById("generate").addEventListener("click", makePass);
     }
 
     // passEl.push("password");
-
+document.getElementById("copy").addEventListener("click", copyPassword);
+    function copyPassword() {
+        var copyText = document.getElementById("password");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+    }
 // document.getElementById("generate").addEventListener("click", makePass()) {
     // passEl.push("password");
 
