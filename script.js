@@ -13,6 +13,11 @@ document.getElementById("generate").addEventListener("click", makePass);
     function makePass() {
         var passLength = prompt("Between 8 - 128, how long would you like your password?");
         console.log(passLength);
+        if (passLength < 8 || passLength > 128) {
+            alert("You must choose a number between 8 - 128");
+            makePass();
+            return;
+        }
         
         var specChar = confirm("Use special characters (*@#%!) ?");
         console.log(specChar);
