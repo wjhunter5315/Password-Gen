@@ -97,6 +97,16 @@ document.getElementById("generate").addEventListener("click", makePass);
                 passEl.push(randomEl);
                 console.log(passEl);
             }
+            else if (specChar === true && caseUpper ===false && caseLower === true) {
+                let newArray = [0, 1, 3];
+                let randomNumber1 = newArray[Math.floor(Math.random() * newArray.length)];
+                let randomNumber2 = Math.floor(Math.random() * charOptions[randomNumber1].length);
+                let randomEl = charOptions[randomNumber1][randomNumber2];
+                console.log(randomNumber1);
+                console.log(randomEl);
+                passEl.push(randomEl);
+                console.log(passEl);
+            }
             else {
                 var newArray = [0];
                 var randomNumber1 = Math.floor(Math.random() * newArray.length);
@@ -115,15 +125,10 @@ document.getElementById("generate").addEventListener("click", makePass);
             console.log(passString);
         }
         
-        // makeString();
-        // var myJSON = JSON.stringify(passEl);
-        // console.log(myJSON);
-        // document.getElementById("password").value = myJSON;
         document.getElementById("password").value = passEl.join("");
        
     }
 
-    // passEl.push("password");
 document.getElementById("copy").addEventListener("click", copyPassword);
     function copyPassword() {
         var copyText = document.getElementById("password");
@@ -131,24 +136,5 @@ document.getElementById("copy").addEventListener("click", copyPassword);
         copyText.setSelectionRange(0, 99999)
         document.execCommand("copy");
     }
-// document.getElementById("generate").addEventListener("click", makePass()) {
-    // passEl.push("password");
 
 console.log(password);
-
-
-
-// makePass();
-
-// getSpec();
-// getUcase();
-// getLcase();
-// console.log(window);
-// console.log(lengthEl);
-
-
-// var randomNumber1 = Math.floor(Math.random() * charOptions.length);
-// var randomNumber2 = Math.floor(Math.random() * charOptions[randomNumber1].length);
-// console.log(randomNumber1);
-// console.log(randomNumber2);
-// console.log(charOptions[randomNumber1][randomNumber2]);
