@@ -1,3 +1,31 @@
 body {
     background-image: url(assets/pgBOHXm.jpg);
+    margin-top: 15%;
+    margin-left: 24%;
+    background-size: 141%;
+    background-position-x: -143px;
+}
+
+#password {
+    height: 40px;
+    width: 60%;
+}
+
+#generate {
+    background-color: #e7e7e7;
+    color: black;
+    margin-right: 30px;
+    margin-left: 10px;
+    width: 26%;
+}
+
+#copy {
+    background-color: #e7e7e7;
+    color: black;
+    width: 26%;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
 }
